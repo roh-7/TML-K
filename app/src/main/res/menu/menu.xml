@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="100"
+        android:title="Scan"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="Add Manually"
+        android:id="@+id/action_manually"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="Update"
+        android:id="@+id/update_manually"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="Log Out"
+        android:id="@+id/log_out_menu"
+        app:showAsAction="never" />
+
+
+
+
+
+
+</menu>

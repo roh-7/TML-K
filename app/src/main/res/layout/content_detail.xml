@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/contentdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Swipe to Refresh . Refreshing infinitely continues because
+    there isn't anything to refresh . Change fragments to stop the refreshing-->
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        />
+
+
+
+</FrameLayout>
