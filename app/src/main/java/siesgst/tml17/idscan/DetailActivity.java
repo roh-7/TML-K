@@ -28,7 +28,6 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.List;
@@ -84,13 +83,13 @@ public class DetailActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-        if (id == R.id.action_scan) {
-            scan();
-            return true;
+//        if (id == R.id.action_scan) {
+//            scan();
+//            return true;
+//
+//        }
 
-        }
-
-        else if (id == R.id.action_manually) {
+        if (id == R.id.action_manually) {
             Log.d("add manually", "in");
             AlertDialog.Builder builder = new AlertDialog.Builder(DetailActivity.this);
             LayoutInflater inflater = DetailActivity.this.getLayoutInflater();
