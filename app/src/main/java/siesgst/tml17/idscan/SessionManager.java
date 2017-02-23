@@ -143,5 +143,11 @@ public class SessionManager {
         return player;
     }
 
+    int getSize(){
+        return player.size();
+    }
+
+
+
 
 }

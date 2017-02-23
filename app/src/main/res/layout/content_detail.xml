@@ -1,5 +1,6 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -7,16 +8,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Swipe to Refresh . Refreshing infinitely continues because
-    there isn't anything to refresh . Change fragments to stop the refreshing-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_size">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:layout_marginTop="5dp"
+
+       android:text="Number of Participants:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/list_size"
+
+            tools:text="Size"/>
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/player_size"
+        android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
         />
 
 
 
-</FrameLayout>
+</RelativeLayout>
